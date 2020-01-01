@@ -1,5 +1,7 @@
 # Team Task Manager
 this application allows you to create manage tasks, and share it with other users
+### demo
+https://team--task-manager.herokuapp.com/
 ### install and run
 ```
   $ git clone git clone https://github.com/RomanLevak/team-task-manager.git
