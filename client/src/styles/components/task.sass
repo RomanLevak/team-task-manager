@@ -1,0 +1,53 @@
+.task
+    display: flex
+    flex-direction: column
+    text-align: left
+    border: 1px solid $orange2
+    border-radius: 2px
+    padding: 4px
+    font-size: 14px
+    height: 100%
+    &__author
+        color: $grey
+        &-email
+            padding-top: 4px
+            display: block
+            font-size: 15px
+            color: $green3
+    &__content
+        margin-top: 8px
+        color: $white2
+        font-size: 15px
+        background: transparent
+    &__btns
+        margin-top: auto !important
+        width: 100%
+        padding: 0 3px
+        margin-top: 12px
+        text-align: center
+        bottom: 2px
+        display: flex
+    &__btn
+        width: calc(100%/3)
+        font-size: 18px
+        background: $orange1
+        &:hover
+            background: $orange2
+    &__input
+        border: none
+        padding: 0
+        max-width: 100%
+        resize: none
+        overflow: hidden
+        font: inherit
+    &__shared
+        &-title
+            display: block
+            margin: 3px 0
+            color: $grey
+        &-body
+            padding-bottom: 6px
+        &-item
+            color: $green4
+            font-size: 13px
+            padding: 2px 0

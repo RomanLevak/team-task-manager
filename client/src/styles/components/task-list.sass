@@ -1,0 +1,22 @@
+.task-list
+    &__error
+        color: $red
+        font-size: 19px
+    &__loading
+        color: $blue1
+        font-size: 18px
+    &__body
+        margin: 0 auto
+        display: flex
+        flex-wrap: wrap
+        align-items: stretch
+        max-width: 800px
+    &__item
+        width: 25%
+        padding: 5px
+
+@media screen and (max-width: 600px)
+    .task-list
+        &__item
+            width: calc(100%/3)
+            padding: 5px
