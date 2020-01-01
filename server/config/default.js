@@ -2,7 +2,7 @@ module.exports = {
     secret: process.env.SECRET || 'some sekret value',
     server: {
         host: 'http://localhost',
-        port: process.env.port || 3000,
+        port: process.env.PORT || 3000,
     },
     mongodb: {
         uri: process.env.MONGOLAB_URI || 'mongodb://localhost:27017/team-task-manager'
