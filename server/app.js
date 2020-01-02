@@ -22,7 +22,7 @@ app.use(express.static(
     path.join(__dirname, '..', 'client', 'public')
 ))
 
-app.use(router)
+app.use('/server', router)
 app.use(errorHandler)
 
 module.exports = app

@@ -17,7 +17,7 @@ export function signIn(email, password) {
     return {
         type: SIGNIN,
         callAPI: {
-            url: '/user/login',
+            url: '/server/user/login',
             method: 'POST',
             body: {email, password}
         }
@@ -28,7 +28,7 @@ export function signUp(email, username, password) {
     return {
         type: SIGNUP,
         callAPI: {
-            url: '/user/register',
+            url: '/server/user/register',
             method: 'POST',
             body: {
                 email,
@@ -43,7 +43,7 @@ export function signOut() {
     return {
         type: SIGNOUT,
         callAPI: {
-            url: '/user/logout',
+            url: '/server/user/logout',
             method: 'POST'
         }
     }
@@ -52,7 +52,7 @@ export function signOut() {
 export function getCurrentUser() {
     return {
         type: GET_CURRENT_USER,
-        callAPI: {url: '/user/me'}
+        callAPI: {url: '/server/user/me'}
     }
 }
 
@@ -60,7 +60,7 @@ export function loadUsers() {
     return {
         type: LOAD_USERS_LIST,
         callAPI: {
-            url: '/user/others'
+            url: '/server/user/others'
         }
     }
 }
@@ -69,7 +69,7 @@ export function loadTaskList() {
     return {
         type: LOAD_TASK_LIST,
         callAPI: {
-            url: '/tasks'
+            url: '/server/tasks'
         }
     }
 }
@@ -84,7 +84,7 @@ export function updateTaskContent(id, content) {
     return {
         type: UPDATE_TASK,
         callAPI: {
-            url: `/tasks/${id}`,
+            url: `/server/tasks/${id}`,
             method: 'PUT',
             body: {content}
         }
@@ -95,7 +95,7 @@ export function shareTask(taskId, userId) {
     return {
         type: SHARE_TASK,
         callAPI: {
-            url: `/tasks/${taskId}/${userId}`,
+            url: `/server/tasks/${taskId}/${userId}`,
             method: 'PUT'
         }
     }
@@ -105,7 +105,7 @@ export function deleteTask(id) {
     return {
         type: DELETE_TASK,
         callAPI: {
-            url: `/tasks/${id}`,
+            url: `/server/tasks/${id}`,
             method: 'DELETE'
         }
     }
@@ -115,7 +115,7 @@ export function subscribe() {
     return {
         type: SUBSCRIBE,
         callAPI: {
-            url: '/tasks/subscribe'
+            url: '/server/tasks/subscribe'
         }
     }
 }
@@ -124,7 +124,7 @@ export function createTask() {
     return {
         type: CREATE_TASK,
         callAPI: {
-            url: '/tasks',
+            url: '/server/tasks',
             method: 'POST'
         }
     }

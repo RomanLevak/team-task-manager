@@ -37,7 +37,7 @@ module.exports = {
         historyApiFallback: true, // for using BrowserRouter
         proxy: {
             '/server': {
-                target: 'http://localhost:3000',
+                target: 'http://localhost:3000/server',
                 changeOrigin: true,
                 secure: false,
                 pathRewrite: {'^/server': ''}
