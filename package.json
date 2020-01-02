@@ -4,9 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "concurrently \"npm run client\" \"npm run server\"",
+    "old_start": "concurrently \"npm run client\" \"npm run server\"",
+    "start": "npm run server",
     "client": "npm start --prefix client/",
-    "server": "npm start --prefix server/"
+    "server": "npm start --prefix server/",
+    "heroku-postbuild": "npm run build --prefix client/"
   },
   "engines": {
     "node": "10.15.0"
